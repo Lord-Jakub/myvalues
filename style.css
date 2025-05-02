@@ -1,0 +1,340 @@
+html {
+    background-color: #000000;
+    padding: 0px;
+}
+
+body {
+    width: 80%;
+    min-height: calc(100vh - 4em);
+    margin: 0 auto;
+    padding: 2em;
+    background-color: #000000;
+    border-color: #000000;
+    border-left-style: solid;
+    border-right-style: solid;
+    border-width: 20px;
+}
+
+p {
+    color: #cecece;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16pt;
+    line-height: 1;
+    margin: 4pt;
+}
+
+div.center {
+    background-color: #0e0e0e;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 8pt;
+    padding: 6pt;
+    color: white;
+    width: 50%;
+    min-width: 488pt;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 24pt;
+    margin: auto;
+}
+
+img.quadcolumn {
+    width: 23.75%;
+    transition: transform .3s;
+}
+
+img.quadcolumn:hover {
+    transform: scale(1.05);
+}
+
+div.quadcolumn {
+    width: 23.75%;
+}
+
+div.axis_name {
+    color: #ffffff;
+    font-size: 19pt;
+    font-family: 'Montserrat';
+    display: inline-block;
+    padding-bottom: 8.65pt;
+}
+
+p.value-description {
+    text-indent: -16pt;
+    margin-left: 20pt;
+}
+
+p.question {
+    margin: 16pt auto;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: normal;
+    width: 70%;
+    min-width: 500pt;
+    min-height: 144pt;
+    background-color: #000000;
+    padding: 16pt;
+    border-radius: 16pt;
+    font-size: 36pt;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+
+h1 {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 72pt;
+    text-align: center;
+    line-height: 72pt;
+    margin-top: 0pt;
+    margin-bottom: 0pt;
+}
+
+h2 {
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36pt;
+    line-height: 36pt;
+    margin-top: 12pt;
+    margin-bottom: 0pt;
+}
+
+li {
+    font-size: 16pt;
+    text-indent: 16pt;
+}
+
+a {
+    font-family: inherit;
+}
+
+img.center {
+    display: block;
+    margin: 1em auto;
+    width: 50%;
+    min-width: 500pt;
+}
+
+.button {
+    background-color: #2196f3;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-radius: 8pt;
+    color: white;
+    padding: 8pt;
+    width: 50%;
+    min-width: 500pt;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 24pt;
+    margin: -2px auto;
+    cursor: pointer;
+}
+
+.small_button,
+.small_button_off {
+    background-color: #333;
+    font-family: 'Montserrat', sans-serif;
+    border: none;
+    border-radius: 8pt;
+    color: white;
+    padding: 8pt;
+    width: 10%;
+    min-width: 100pt;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 18pt;
+    margin: -2px auto;
+    cursor: pointer;
+}
+
+.small_button_off {
+    background-color: #ddd;
+    color: #888;
+    border: 2px solid #888;
+    cursor: not-allowed;
+    margin: -4px auto;
+}
+
+div.axis {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.bar {
+    height: 36pt;
+    line-height: 36pt;
+    padding: 8pt;
+    margin-top: 4pt;
+    margin-bottom: 4pt;
+    border-width: 4px;
+    border-right-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: #222222;
+    background-color: #eeeeee;
+    display: block;
+    width: 50%;
+}
+
+div.text-wrapper {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36pt;
+    line-height: 36pt;
+    color: #222222;
+    display: inline-block;
+}
+
+div.equality {
+    background-color: #f44336;
+    text-align: left;
+    border-right-style: solid;
+}
+
+div.wealth {
+    background-color: #00897b;
+    text-align: right;
+    border-left-style: solid;
+}
+
+div.liberty {
+    background-color: #ffeb3b;
+    text-align: left;
+    border-right-style: solid;
+}
+
+div.authority {
+    background-color: #3f51b5;
+    text-align: right;
+    border-left-style: solid;
+}
+
+div.internat {
+    background-color: #ffdb8c;
+    text-align: right;
+    border-left-style: solid;
+}
+
+div.nati {
+    background-color: #ff9800;
+    text-align: left;
+    border-right-style: solid;
+}
+
+div.progress {
+    background-color: #9c27b0;
+    text-align: right;
+    border-left-style: solid;
+}
+
+div.tradition {
+    background-color: #8bc34a;
+    text-align: left;
+    border-right-style: solid;
+}
+
+div.militarist {
+    background-color: #8BC34A;
+    text-align: right;
+    border-left-style: solid;
+}
+
+div.pacifist {
+    background-color: #ff84a3;
+    text-align: left;
+    border-right-style: solid;
+}
+
+div.trade {
+    background-color: #3993dc;
+    text-align: right;
+    border-left-style: solid;
+}
+
+div.protectionist {
+    background-color: #a400d6;
+    text-align: left;
+    border-right-style: solid;
+}
+
+div.Accelerate {
+    background-color: #607d8b;
+    text-align: right;
+    border-left-style: solid;
+}
+
+div.Decelerate {
+    background-color: #ffac67;
+    text-align: left;
+    border-right-style: solid;
+}
+
+div.democracy {
+    background-color: #00796f;
+    text-align: right;
+    border-left-style: solid;
+}
+
+div.anti-democratic {
+    background-color: #ff9100;
+    text-align: left;
+    border-right-style: solid;
+}
+
+div.open_borders {
+    background-color: #0400ff;
+    text-align: right;
+    border-left-style: solid;
+}
+
+div.close_borders {
+    background-color: hsl(332, 100%, 70%);
+    text-align: left;
+    border-right-style: solid;
+}
+
+div.reform {
+    background-color: #f86969;
+    text-align: right;
+    border-left-style: solid;
+}
+
+div.revolution {
+    background-color: #ad0000;
+    text-align: left;
+    border-right-style: solid;
+}
+
+div.secular {
+    background-color: #ffa600;
+    text-align: right;
+    border-left-style: solid;
+}
+
+div.religious {
+    background-color: #00a2ff;
+    text-align: left;
+    border-right-style: solid;
+}
+
+span.weight-300 {
+    font-weight: 300;
+}
+
+#banner {
+    border-color: #444444;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 8pt;
+    display: block;
+    margin: 8pt;
+    margin-left: auto;
+    margin-right: auto;
+}
