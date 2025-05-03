@@ -1120,24 +1120,6 @@ questions = [
         }
     },
     {
-        "question":  "Society was better many years ago than it is now.",
-        "effect": {
-            "econ": 0,
-            "nati": 0,
-            "govt": 0,
-            "scty": 0,
-            "mltr": 0,
-            "trde": 0,
-            "tech": -10,
-            "demc": 0,
-            "imig": 0,
-            "radi": 0,
-            "reli": 0,
-            "fede": 0,
-            "norm": 0
-        }
-    },
-    {
         "question": "Technology is making people lose jobs, which is ultimately harmful for humanity.",
         "effect": {
             "econ": 0,
@@ -1196,24 +1178,6 @@ questions = [
         "effect": {
             "econ": 0,
             "nati": -5,
-            "govt": 0,
-            "scty": 0,
-            "mltr": 0,
-            "trde": 0,
-            "tech": 0,
-            "demc": 0,
-            "imig": -10,
-            "radi": 0,
-            "reli": 0,
-            "fede": 0,
-            "norm": 0
-        }
-    },
-    {
-        "question": "If we accept migrants at all, it is important that they assimilate into our culture.",
-        "effect": {
-            "econ": 0,
-            "nati": -3,
             "govt": 0,
             "scty": 0,
             "mltr": 0,
