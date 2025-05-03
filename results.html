@@ -271,6 +271,13 @@ stats"></a></div>
 
         // Maximální možná odchylka = 12 * 50 = 600
         let normie = ((1 - (totalDeviation / 600)) * 100).toFixed(1)  // 0 = extrém, 100 = normální
+        normie = normie *0.75
+        if (normie > 50) {
+            normie += 15
+            if (normie > 65) {
+                normie += 10
+            }
+        }
 
         // Derivace opačných hodnot
         let wealth = (100 - equality).toFixed(1)
