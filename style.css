@@ -137,6 +137,21 @@ img.center {
     margin: -2px auto;
     cursor: pointer;
 }
+.stronglyAgree {
+    background-color: #00a806;
+}
+.agree {
+    background-color: #3bff42;
+}
+.neutral {
+    background-color: #8f8f8f;
+}
+.disagree {
+    background-color: #f44336;
+}
+.stronglyDisagree {
+    background-color: #c00d00;
+}
 
 .small_button,
 .small_button_off {
