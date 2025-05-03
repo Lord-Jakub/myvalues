@@ -263,7 +263,7 @@ stats"></a></div>
         let federal = parseFloat(getQueryVariable("fede"))
 
         // Výpočet normie: odchylka od 50, kromě reform, který se měří od 100
-        let valuesFrom50 = [equality, internat, liberty, progress, pacifist, freetrade, transhumanism, democracy, proimigration, atheist, unitary]
+        let valuesFrom50 = [equality, internat, liberty, progress, pacifist, freetrade, transhumanism, democracy, proimigration, atheist, federal]
         let totalDeviation = valuesFrom50.reduce((sum, val) => sum + Math.abs(val - 50), 0)
 
         // Reform se měří jako odchylka od 100
