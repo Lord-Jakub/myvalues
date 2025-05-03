@@ -196,12 +196,12 @@ div.text-wrapper {
 }
 
 div.unitary {
-    background-color: #ffb300;
+    background-color: #fa3c3c;
     text-align: right;
     border-left-style: solid;
 }
 div.federal {
-    background-color: #ff6f00;
+    background-color: #ffd727;
     text-align: left;
     border-right-style: solid;
 }
@@ -339,12 +339,12 @@ div.religious {
 }
 
 div.normie {
-    background-color: #ff6f00;
+    background-color: #00aa71;
     text-align: right;
     border-left-style: solid;
 }
 div.radical {
-    background-color: #ffb300;
+    background-color: #a02361;
     text-align: left;
     border-right-style: solid;
 }

@@ -1731,5 +1731,23 @@ questions = [
             "norm": 0
         }
     },
+    {
+        "question": "When tyranny becomes law, rebellion becomes duty.",
+        "effect": {
+            "econ": 0,
+            "nati": 0,
+            "govt": 7,
+            "scty": 0,
+            "mltr": 0,
+            "trde": 0,
+            "tech": 0,
+            "demc": 0,
+            "imig": 0,
+            "radi": -5,
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
+        }
+    },
 
 ];

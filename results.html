@@ -260,7 +260,7 @@ stats"></a></div>
         let proimigration = parseFloat(getQueryVariable("imig"))
         let reform = parseFloat(getQueryVariable("radi")) // bude mít jiný výpočet
         let atheist = parseFloat(getQueryVariable("reli"))
-        let unitary = parseFloat(getQueryVariable("fede"))
+        let federal = parseFloat(getQueryVariable("fede"))
 
         // Výpočet normie: odchylka od 50, kromě reform, který se měří od 100
         let valuesFrom50 = [equality, internat, liberty, progress, pacifist, freetrade, transhumanism, democracy, proimigration, atheist, unitary]
@@ -285,7 +285,7 @@ stats"></a></div>
         let revolution = (100 - reform).toFixed(1)
         let religious = (100 - atheist).toFixed(1)
         let radical = (100 - normie).toFixed(1)
-        let federal = (100 - unitary).toFixed(1)
+        let unitary = (100 - federal).toFixed(1)
 
 
 
