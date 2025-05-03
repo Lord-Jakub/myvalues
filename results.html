@@ -1,7 +1,7 @@
 <head>
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700|Roboto:400,700" rel="stylesheet">
     <link href='style.css' rel='stylesheet' type='text/css'>
-    <title>IDKvalues Results</title>
+    <title>MyValues Results</title>
     <link rel="icon" type="x-icon" href="icon.png">
     <link rel="shortcut icon" type="x-icon" href="icon.png">
     <meta charset="utf-8">
@@ -13,10 +13,23 @@
 </script>
 
 <body>
-    <h1>8values</h1>
+    <h1>MyValues</h1>
     <hr>
 
     <h1>Results</h1>
+
+    <!--Federal axis-->
+    <h2>Federal Axis: <span class="weight-300" id="federal-label"></span></h2>
+    <div class="axis">
+        <img id="img-federal" src="value_images/federal.png" height="128pt" />
+        <div class="bar federal" id="bar-federal">
+            <div class="text-wrapper" id="federal"></div>
+        </div>
+        <div class="bar unitary" id="bar-unitary">
+            <div class="text-wrapper" id="unitary"></div>
+        </div>
+        <img id="img-unitary" src="value_images/unitary.png" height="128pt" />
+    </div>
 
     <h2>Economic Axis: <span class="weight-300" id="economic-label"></span></h2>
     <div class="axis">
@@ -125,7 +138,7 @@
     <!--Religion-->
     <h2>Religion Axis: <span class="weight-300" id="religious-label"></span></h2>
     <div class="axis">
-        
+
         <img id="img-religious" src="value_images/religious.png" height="128pt" />
         <div class="bar religious" id="bar-religious">
             <div class="text-wrapper" id="religious"></div>
@@ -134,8 +147,8 @@
             <div class="text-wrapper" id="secular"></div>
         </div>
         <img id="img-secular" src="value_images/secular.png" height="128pt" />
-        
-       
+
+
 
 
     </div>
@@ -151,13 +164,26 @@
         </div>
         <img id="img-revolution" src="value_images/revolution.png" height="128pt" />
     </div>
-
+    <!--Normie axis-->
+    <h2>Normie Axis: <span class="weight-300" id="normie-label"></span></h2>
+    <div class="axis">
+        <img id="img-normie" src="value_images/apolitical.png" height="128pt" />
+        <div class="bar normie" id="bar-normie">
+            <div class="text-wrapper" id="normie"></div>
+        </div>
+        <div class="bar radical" id="bar-radical">
+            <div class="text-radical" id="radical"></div>
+        </div>
+        <img id="img-radical" src="value_images/extremist.png" height="128pt" />
+    </div>
 
 
     <h2>Closest Match: <span class="weight-300" id="ideology-label"></span></h2>
     <p>Ideological matching is a work in progress, and is much less accurate than the values and axes.</p>
-    <p>You can send these results by copying and pasting the URL at the top of the page or using the image below. Think
-        your matched ideology was wrong? Want to help us calibrate the test? Send the results along with your political
+    <p>You can send these results by copying and pasting the URL at the top of the page or using the image
+        below. Think
+        your matched ideology was wrong? Want to help us calibrate the test? Send the results along with your
+        political
         ideology to us at eightvalues@gmail.com, or send us any comments, questions, or criticism. </p>
     <hr />
     <img src="" id="banner">
@@ -204,13 +230,14 @@ stats"></a></div>
         govtArray = ["Anarchist", "Libertarian", "Liberal", "neutral", "Statist", "Authoritarian", "Totalitarian"]
         sctyArray = ["Revolutionary", "Very Progressive", "Progressive", "Neutral", "Traditional", "Very Traditional", "Reactionary"]
         mltrArray = ["Militarist", "Interventionist", "Interventionist", "Neutral", "Anti war", "Pacifist", "Extreme Pacifist"]
-        trdeArray = ["Free Trade", "Free Trade" , "Neutral", "Neutral", "Neutral", "Protectionist", "Extreme Protectionist"]
+        trdeArray = ["Free Trade", "Free Trade", "Neutral", "Neutral", "Neutral", "Protectionist", "Extreme Protectionist"]
         techArray = ["Transhumanist", "Accelerate", "Neutral", "Neutral", "Neutral", "Decelerate", "Return to monke"]
         demcArray = ["Direct Democracy", "Democratic", "Democratic leaning", "Neutral", "Democracy scepticism", "Anti-Democratic", "Dictatorship"]
         imigArray = ["Open Borders", "Proimigration", "Proimigration", "Neutral", "Assimilation", "Close Borders", "Ethnonationalist"]
         radiArray = ["Reform", "Radical Reform", "Balanced", "Balanced", "Balanced", "Revolution", "Revolution"]
         reliArray = ["Antitheist", "Atheist", "Agnostic", "Neutral", "Religius", "Religious", "Fanatic"]
-
+        normArray = ["Anti-political", "Apolitical", "Centrist", "Centrist", "Moderate", "Radical", "Extremist"]
+        fedeArray = ["Confederal", "Federational", "Federal", "Centrist", "Unitary", "Centralized", "Extremely Centralized"]
         function setLabel(val, ary) {
             if (val > 100) { return "" } else
                 if (val > 90) { return ary[0] } else
@@ -222,29 +249,45 @@ stats"></a></div>
                                         if (val >= 0) { return ary[6] } else { return "" }
         }
 
-        equality = getQueryVariable("econ")
-        nation = getQueryVariable("nati")
-        liberty = getQueryVariable("govt")
-        progress = getQueryVariable("scty")
-        pacifist = getQueryVariable("mltr")
-        freetrade = getQueryVariable("trde")
-        transhumanism = getQueryVariable("tech")
-        democracy = getQueryVariable("demc")
-        proimigration = getQueryVariable("imig")
-        reform = getQueryVariable("radi")
-        atheist = getQueryVariable("reli")
-        
-        wealth = (100 - equality).toFixed(1)
-        internat = (100 - nation).toFixed(1)
-        authority = (100 - liberty).toFixed(1)
-        tradition = (100 - progress).toFixed(1)
-        militarist = (100 - pacifist).toFixed(1)
-        protectionist = (100 - freetrade).toFixed(1)
-        monke = (100 - transhumanism).toFixed(1)
-        anti_democratic = (100 - democracy).toFixed(1)
-        close_borders = (100 - proimigration).toFixed(1)
-        revolution = (100 - reform).toFixed(1)
-        religious = (100 - atheist).toFixed(1)
+        let equality = parseFloat(getQueryVariable("econ"))
+        let internat = parseFloat(getQueryVariable("nati"))
+        let liberty = parseFloat(getQueryVariable("govt"))
+        let progress = parseFloat(getQueryVariable("scty"))
+        let pacifist = parseFloat(getQueryVariable("mltr"))
+        let freetrade = parseFloat(getQueryVariable("trde"))
+        let transhumanism = parseFloat(getQueryVariable("tech"))
+        let democracy = parseFloat(getQueryVariable("demc"))
+        let proimigration = parseFloat(getQueryVariable("imig"))
+        let reform = parseFloat(getQueryVariable("radi")) // bude mít jiný výpočet
+        let atheist = parseFloat(getQueryVariable("reli"))
+        let unitary = parseFloat(getQueryVariable("fede"))
+
+        // Výpočet normie: odchylka od 50, kromě reform, který se měří od 100
+        let valuesFrom50 = [equality, internat, liberty, progress, pacifist, freetrade, transhumanism, democracy, proimigration, atheist, unitary]
+        let totalDeviation = valuesFrom50.reduce((sum, val) => sum + Math.abs(val - 50), 0)
+
+        // Reform se měří jako odchylka od 100
+        totalDeviation += Math.abs(reform - 100)
+
+        // Maximální možná odchylka = 12 * 50 = 600
+        let normie = ((1 - (totalDeviation / 600)) * 100).toFixed(1)  // 0 = extrém, 100 = normální
+
+        // Derivace opačných hodnot
+        let wealth = (100 - equality).toFixed(1)
+        let nation = (100 - internat).toFixed(1)
+        let authority = (100 - liberty).toFixed(1)
+        let tradition = (100 - progress).toFixed(1)
+        let militarist = (100 - pacifist).toFixed(1)
+        let protectionist = (100 - freetrade).toFixed(1)
+        let monke = (100 - transhumanism).toFixed(1)
+        let anti_democratic = (100 - democracy).toFixed(1)
+        let close_borders = (100 - proimigration).toFixed(1)
+        let revolution = (100 - reform).toFixed(1)
+        let religious = (100 - atheist).toFixed(1)
+        let radical = (100 - normie).toFixed(1)
+        let federal = (100 - unitary).toFixed(1)
+
+
 
         setBarValue("equality", equality)
         setBarValue("wealth", wealth)
@@ -268,6 +311,10 @@ stats"></a></div>
         setBarValue("revolution", revolution)
         setBarValue("secular", atheist)
         setBarValue("religious", religious)
+        setBarValue("federal", federal)
+        setBarValue("unitary", unitary)
+        setBarValue("normie", normie)
+        setBarValue("radical", radical)
 
         document.getElementById("economic-label").innerHTML = setLabel(equality, econArray)
         document.getElementById("national-label").innerHTML = setLabel(internat, natiArray)
@@ -280,6 +327,8 @@ stats"></a></div>
         document.getElementById("imigration-label").innerHTML = setLabel(proimigration, imigArray)
         document.getElementById("reform-label").innerHTML = setLabel(reform, radiArray)
         document.getElementById("religious-label").innerHTML = setLabel(atheist, reliArray)
+        document.getElementById("federal-label").innerHTML = setLabel(federal, fedeArray)
+        document.getElementById("normie-label").innerHTML = setLabel(normie, normArray)
 
         ideology = ""
         ideodist = Infinity
@@ -308,54 +357,63 @@ stats"></a></div>
             var c = document.createElement("canvas")
             var ctx = c.getContext("2d")
             c.width = 800;
-            c.height = 650;
+            c.height = 1490;
             ctx.fillStyle = "#EEEEEE"
-            ctx.fillRect(0, 0, 800, 650);
+            ctx.fillRect(0, 0, 800, 1490);
 
-            img = document.getElementById("img-equality")
+            img = document.getElementById("img-federal")
             ctx.drawImage(img, 20, 170, 100, 100);
+            img = document.getElementById("img-unitary")
+            ctx.drawImage(img, 680, 170, 100, 100);
+            img = document.getElementById("img-equality")
+            ctx.drawImage(img, 20, 290, 100, 100);
             img = document.getElementById("img-wealth")
-            ctx.drawImage(img, 680, 170, 100, 100)
+            ctx.drawImage(img, 680, 290, 100, 100);
             img = document.getElementById("img-nati")
-            ctx.drawImage(img, 20, 290, 100, 100)
+            ctx.drawImage(img, 20, 410, 100, 100);
             img = document.getElementById("img-internat")
-            ctx.drawImage(img, 680, 290, 100, 100)
+            ctx.drawImage(img, 680, 410, 100, 100);
             img = document.getElementById("img-liberty")
-            ctx.drawImage(img, 20, 410, 100, 100)
+            ctx.drawImage(img, 20, 530, 100, 100);
             img = document.getElementById("img-authority")
-            ctx.drawImage(img, 680, 410, 100, 100)
+            ctx.drawImage(img, 680, 530, 100, 100);
             img = document.getElementById("img-tradition")
-            ctx.drawImage(img, 20, 530, 100, 100)
+            ctx.drawImage(img, 20, 650, 100, 100);
             img = document.getElementById("img-progress")
-            ctx.drawImage(img, 680, 530, 100, 100)
+            ctx.drawImage(img, 680, 650, 100, 100);
             img = document.getElementById("img-militarist")
-            ctx.drawImage(img, 20, 650, 100, 100)
+            ctx.drawImage(img, 20, 770, 100, 100);
             img = document.getElementById("img-pacifist")
-            ctx.drawImage(img, 680, 650, 100, 100)
+            ctx.drawImage(img, 680, 770, 100, 100);
             img = document.getElementById("img-trade")
-            ctx.drawImage(img, 20, 770, 100, 100)
+            ctx.drawImage(img, 20, 890, 100, 100);
             img = document.getElementById("img-protectionist")
-            ctx.drawImage(img, 680, 770, 100, 100)
+            ctx.drawImage(img, 680, 890, 100, 100);
             img = document.getElementById("img-Accelerate")
-            ctx.drawImage(img, 20, 890, 100, 100)
+            ctx.drawImage(img, 20, 1010, 100, 100);
             img = document.getElementById("img-Decelerate")
-            ctx.drawImage(img, 680, 890, 100, 100)
+            ctx.drawImage(img, 680, 1010, 100, 100);
             img = document.getElementById("img-democracy")
-            ctx.drawImage(img, 20, 1010, 100, 100)
+            ctx.drawImage(img, 20, 1130, 100, 100);
             img = document.getElementById("img-anti-democratic")
-            ctx.drawImage(img, 680, 1010, 100, 100)
+            ctx.drawImage(img, 680, 1130, 100, 100);
             img = document.getElementById("img-open_borders")
-            ctx.drawImage(img, 20, 1130, 100, 100)
+            ctx.drawImage(img, 20, 1250, 100, 100);
             img = document.getElementById("img-close_borders")
-            ctx.drawImage(img, 680, 1130, 100, 100)
+            ctx.drawImage(img, 680, 1250, 100, 100);
             img = document.getElementById("img-secular")
-            ctx.drawImage(img, 20, 1250, 100, 100)
+            ctx.drawImage(img, 20, 1370, 100, 100);
             img = document.getElementById("img-religious")
-            ctx.drawImage(img, 680, 1250, 100, 100)
+            ctx.drawImage(img, 680, 1370, 100, 100);
             img = document.getElementById("img-reform")
-            ctx.drawImage(img, 20, 1370, 100, 100)
+            ctx.drawImage(img, 20, 1490, 100, 100);
             img = document.getElementById("img-revolution")
-            ctx.drawImage(img, 680, 1370, 100, 100)
+            ctx.drawImage(img, 680, 1490, 100, 100);
+            img = document.getElementById("img-normie")
+            ctx.drawImage(img, 20, 1610, 100, 100);
+            img = document.getElementById("img-radical")
+            ctx.drawImage(img, 680, 1610, 100, 100);
+
 
             ctx.fillStyle = "#222222"
             ctx.fillRect(120, 180, 560, 80)
@@ -369,86 +427,104 @@ stats"></a></div>
             ctx.fillRect(120, 1140, 560, 80)
             ctx.fillRect(120, 1260, 560, 80)
             ctx.fillRect(120, 1380, 560, 80)
+            ctx.fillRect(120, 1500, 560, 80)
+            ctx.fillRect(120, 1620, 560, 80)
+            ctx.fillStyle = "#ffffff"
+            ctx.fillRect(120, 180, 5.6 * federal - 2, 72)
             ctx.fillStyle = "#f44336"
-            ctx.fillRect(120, 184, 5.6 * equality - 2, 72)
+            ctx.fillRect(682 - 5.6 * unitary, 180, 5.6 * unitary - 2, 72)
+            ctx.fillStyle = "#f44336"
+            ctx.fillRect(120, 304, 5.6 * equality - 2, 72)
             ctx.fillStyle = "#00897b"
-            ctx.fillRect(682 - 5.6 * wealth, 184, 5.6 * wealth - 2, 72)
+            ctx.fillRect(682 - 5.6 * wealth, 304, 5.6 * wealth - 2, 72)
             ctx.fillStyle = "#ff9800"
-            ctx.fillRect(120, 304, 5.6 * nation - 2, 72)
+            ctx.fillRect(120, 424, 5.6 * nation - 2, 72)
             ctx.fillStyle = "#03a9f4"
-            ctx.fillRect(682 - 5.6 * internat, 304, 5.6 * internat - 2, 72)
+            ctx.fillRect(682 - 5.6 * internat, 424, 5.6 * internat - 2, 72)
             ctx.fillStyle = "#ffeb3b"
-            ctx.fillRect(120, 424, 5.6 * liberty - 2, 72)
+            ctx.fillRect(120, 544, 5.6 * liberty - 2, 72)
             ctx.fillStyle = "#3f51b5"
-            ctx.fillRect(682 - 5.6 * authority, 424, 5.6 * authority - 2, 72)
+            ctx.fillRect(682 - 5.6 * authority, 544, 5.6 * authority - 2, 72)
             ctx.fillStyle = "#8bc34a"
-            ctx.fillRect(120, 544, 5.6 * tradition - 2, 72)
+            ctx.fillRect(120, 664, 5.6 * tradition - 2, 72)
             ctx.fillStyle = "#9c27b0"
-            ctx.fillRect(682 - 5.6 * progress, 544, 5.6 * progress - 2, 72)
+            ctx.fillRect(682 - 5.6 * progress, 664, 5.6 * progress - 2, 72)
             ctx.fillStyle = "#222222"
-            ctx.fillRect(120, 664, 5.6 * militarist - 2, 72)
+            ctx.fillRect(120, 784, 5.6 * militarist - 2, 72)
             ctx.fillStyle = "#ff5722"
-            ctx.fillRect(682 - 5.6 * pacifist, 664, 5.6 * pacifist - 2, 72)
+            ctx.fillRect(682 - 5.6 * pacifist, 784, 5.6 * pacifist - 2, 72)
             ctx.fillStyle = "#795548"
-            ctx.fillRect(120, 784, 5.6 * freetrade - 2, 72)
+            ctx.fillRect(120, 904, 5.6 * freetrade - 2, 72)
             ctx.fillStyle = "#607d8b"
-            ctx.fillRect(682 - 5.6 * protectionist, 784, 5.6 * protectionist - 2, 72)
+            ctx.fillRect(682 - 5.6 * protectionist, 904, 5.6 * protectionist - 2, 72)
             ctx.fillStyle = "#ffeb3b"
-            ctx.fillRect(120, 904, 5.6 * transhumanism - 2, 72)
+            ctx.fillRect(120, 1024, 5.6 * transhumanism - 2, 72)
             ctx.fillStyle = "#3f51b5"
-            ctx.fillRect(682 - 5.6 * monke, 904, 5.6 * monke - 2, 72)
+            ctx.fillRect(682 - 5.6 * monke, 1024, 5.6 * monke - 2, 72)
             ctx.fillStyle = "#8bc34a"
-            ctx.fillRect(120, 1024, 5.6 * democracy - 2, 72)
+            ctx.fillRect(120, 1144, 5.6 * democracy - 2, 72)
             ctx.fillStyle = "#9c27b0"
-            ctx.fillRect(682 - 5.6 * anti_democratic, 1024, 5.6 * anti_democratic - 2, 72)
+            ctx.fillRect(682 - 5.6 * anti_democratic, 1144, 5.6 * anti_democratic - 2, 72)
             ctx.fillStyle = "#222222"
-            ctx.fillRect(120, 1144, 5.6 * proimigration - 2, 72)
+            ctx.fillRect(120, 1264, 5.6 * proimigration - 2, 72)
             ctx.fillStyle = "#ff5722"
-            ctx.fillRect(682 - 5.6 * close_borders, 1144, 5.6 * close_borders - 2, 72)
+            ctx.fillRect(682 - 5.6 * close_borders, 1264, 5.6 * close_borders - 2, 72)
             ctx.fillStyle = "#795548"
-            ctx.fillRect(120, 1264, 5.6 * atheist - 2, 72)
+            ctx.fillRect(120, 1384, 5.6 * atheist - 2, 72)
             ctx.fillStyle = "#607d8b"
-            ctx.fillRect(682 - 5.6 * religious, 1264, 5.6 * religious - 2, 72)
+            ctx.fillRect(682 - 5.6 * religious, 1384, 5.6 * religious - 2, 72)
             ctx.fillStyle = "#ffeb3b"
-            ctx.fillRect(120, 1384, 5.6 * reform - 2, 72)
+            ctx.fillRect(120, 1504, 5.6 * reform - 2, 72)
             ctx.fillStyle = "#3f51b5"
-            ctx.fillRect(682 - 5.6 * revolution, 1384, 5.6 * revolution - 2, 72)
+            ctx.fillRect(682 - 5.6 * revolution, 1504, 5.6 * revolution - 2, 72)
             ctx.fillStyle = "#8bc34a"
+            ctx.fillRect(120, 1624, 5.6 * normie - 2, 72)
+            ctx.fillStyle = "#9c27b0"
+            ctx.fillRect(682 - 5.6 * radical, 1624, 5.6 * radical - 2, 72)
+            ctx.fillStyle = "#222222"
+
             ctx.font = "700 80px Montserrat"
             ctx.textAlign = "left"
-            ctx.fillText("8values", 20, 90)
+            ctx.fillText("myvalues", 20, 90)
             ctx.font = "50px Montserrat"
             ctx.fillText(ideology, 20, 140)
 
             ctx.textAlign = "left"
-            if (equality > 30) { ctx.fillText(equality + "%", 130, 237.5) }
-            if (nation > 30) { ctx.fillText(nation + "%", 130, 357.5) }
-            if (liberty > 30) { ctx.fillText(liberty + "%", 130, 477.5) }
-            if (tradition > 30) { ctx.fillText(tradition + "%", 130, 597.5) }
-            if (militarist > 30) { ctx.fillText(militarist + "%", 130, 717.5) }
-            if (freetrade > 30) { ctx.fillText(freetrade + "%", 130, 837.5) }
-            if (transhumanism > 30) { ctx.fillText(transhumanism + "%", 130, 957.5) }
-            if (democracy > 30) { ctx.fillText(democracy + "%", 130, 1077.5) }
-            if (proimigration > 30) { ctx.fillText(proimigration + "%", 130, 1197.5) }
-            if (reform > 30) { ctx.fillText(reform + "%", 130, 1317.5) }
-            if (religious > 30) { ctx.fillText(religious + "%", 130, 1437.5) }
+            if (federal > 30) { ctx.fillText(federal + "%", 130, 237.5) }
+            if (equality > 30) { ctx.fillText(equality + "%", 130, 357.5) }
+            if (nation > 30) { ctx.fillText(nation + "%", 130, 477.5) }
+            if (liberty > 30) { ctx.fillText(liberty + "%", 130, 597.5) }
+            if (tradition > 30) { ctx.fillText(tradition + "%", 130, 717.5) }
+            if (militarist > 30) { ctx.fillText(militarist + "%", 130, 837.5) }
+            if (freetrade > 30) { ctx.fillText(freetrade + "%", 130, 957.5) }
+            if (transhumanism > 30) { ctx.fillText(transhumanism + "%", 130, 1077.5) }
+            if (democracy > 30) { ctx.fillText(democracy + "%", 130, 1197.5) }
+            if (proimigration > 30) { ctx.fillText(proimigration + "%", 130, 1317.5) }
+            if (reform > 30) { ctx.fillText(reform + "%", 130, 1437.5) }
+            if (religious > 30) { ctx.fillText(religious + "%", 130, 1557.5) }
+            if (normie > 30) { ctx.fillText(radical + "%", 130, 1677.5) } // poslední o jeden navíc
+
             ctx.textAlign = "right"
-            if (wealth > 30) { ctx.fillText(wealth + "%", 670, 237.5) }
-            if (internat > 30) { ctx.fillText(internat + "%", 670, 357.5) }
-            if (authority > 30) { ctx.fillText(authority + "%", 670, 477.5) }
-            if (progress > 30) { ctx.fillText(progress + "%", 670, 597.5) }
-            if (pacifist > 30) { ctx.fillText(pacifist + "%", 670, 717.5) }
-            if (protectionist > 30) { ctx.fillText(protectionist + "%", 670, 837.5) }
-            if (monke > 30) { ctx.fillText(monke + "%", 670, 957.5) }
-            if (anti_democratic > 30) { ctx.fillText(anti_democratic + "%", 670, 1077.5) }
-            if (close_borders > 30) { ctx.fillText(close_borders + "%", 670, 1197.5) }
-            if (revolution > 30) { ctx.fillText(revolution + "%", 670, 1317.5) }
-            if (religious > 30) { ctx.fillText(religious + "%", 670, 1437.5) }
+            if (unitary > 30) { ctx.fillText(unitary + "%", 670, 237.5) }
+            if (wealth > 30) { ctx.fillText(wealth + "%", 670, 357.5) }
+            if (internat > 30) { ctx.fillText(internat + "%", 670, 477.5) }
+            if (authority > 30) { ctx.fillText(authority + "%", 670, 597.5) }
+            if (progress > 30) { ctx.fillText(progress + "%", 670, 717.5) }
+            if (pacifist > 30) { ctx.fillText(pacifist + "%", 670, 837.5) }
+            if (protectionist > 30) { ctx.fillText(protectionist + "%", 670, 957.5) }
+            if (monke > 30) { ctx.fillText(monke + "%", 670, 1077.5) }
+            if (anti_democratic > 30) { ctx.fillText(anti_democratic + "%", 670, 1197.5) }
+            if (close_borders > 30) { ctx.fillText(close_borders + "%", 670, 1317.5) }
+            if (revolution > 30) { ctx.fillText(revolution + "%", 670, 1437.5) }
+            if (religious > 30) { ctx.fillText(religious + "%", 670, 1557.5) }
+            if (radical > 30) { ctx.fillText(radical + "%", 670, 1677.5) }
+
 
             ctx.font = "300 30px Montserrat"
-            ctx.fillText("8values.github.io", 780, 60)
+            ctx.fillText("lord-jakub.github.io/myvalues", 780, 60)
             ctx.fillText(version, 780, 90)
             ctx.textAlign = "center"
+            ctx.fillText("Federal Axis: " + document.getElementById("federal-label").innerHTML, 400, 55)
             ctx.fillText("Economic Axis: " + document.getElementById("economic-label").innerHTML, 400, 175)
             ctx.fillText("Nationalism Axis: " + document.getElementById("national-label").innerHTML, 400, 295)
             ctx.fillText("Civil Axis: " + document.getElementById("state-label").innerHTML, 400, 415)
@@ -460,6 +536,7 @@ stats"></a></div>
             ctx.fillText("Imigration Axis: " + document.getElementById("imigration-label").innerHTML, 400, 1135)
             ctx.fillText("Religion Axis: " + document.getElementById("religious-label").innerHTML, 400, 1255)
             ctx.fillText("Reform Axis: " + document.getElementById("reform-label").innerHTML, 400, 1375)
+            ctx.fillText("Normie Axis: " + document.getElementById("normie-label").innerHTML, 400, 1495)
 
             document.getElementById("banner").src = c.toDataURL();
         }

@@ -29,7 +29,7 @@ div.center {
     border-radius: 8pt;
     padding: 6pt;
     color: white;
-    width: 50%;
+    width: 0%;
     min-width: 488pt;
     text-align: center;
     text-decoration: none;
@@ -39,8 +39,11 @@ div.center {
 }
 
 img.quadcolumn {
-    width: 23.75%;
+    width: 13.75%;
     transition: transform .3s;
+}
+.quadcolumn.space {
+    margin-right: 20px;  /* Větší mezera mezi těmito obrázky */
 }
 
 img.quadcolumn:hover {
@@ -192,6 +195,17 @@ div.text-wrapper {
     display: inline-block;
 }
 
+div.unitary {
+    background-color: #ffb300;
+    text-align: right;
+    border-left-style: solid;
+}
+div.federal {
+    background-color: #ff6f00;
+    text-align: left;
+    border-right-style: solid;
+}
+
 div.equality {
     background-color: #f44336;
     text-align: left;
@@ -320,6 +334,17 @@ div.secular {
 
 div.religious {
     background-color: #00a2ff;
+    text-align: left;
+    border-right-style: solid;
+}
+
+div.normie {
+    background-color: #ff6f00;
+    text-align: right;
+    border-left-style: solid;
+}
+div.radical {
+    background-color: #ffb300;
     text-align: left;
     border-right-style: solid;
 }

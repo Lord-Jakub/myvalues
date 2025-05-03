@@ -4,7 +4,7 @@ questions = [
         "effect": {
             "econ": 10,
             "nati": 0,
-            "govt": -5,
+            "govt": 0,
             "scty": 0,
             "mltr": 0,
             "trde": 0,
@@ -12,7 +12,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -28,7 +30,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -44,7 +48,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -60,23 +66,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
-        }
-    },
-    {
-        "question": "Publicly-funded research is more beneficial to the people than leaving it to the market.",
-        "effect": {
-            "econ": 10,
-            "nati": 0,
-            "govt": 0,
-            "scty": 0,
-            "mltr": 0,
-            "trde": 0,
-            "tech": 0,
-            "demc": 0,
-            "imig": 0,
-            "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -84,7 +76,7 @@ questions = [
         "effect": {
             "econ": 5,
             "nati": 0,
-            "govt": -5,
+            "govt": -2,
             "scty": 0,
             "mltr": 0,
             "trde": -10,
@@ -92,7 +84,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -108,7 +102,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -124,7 +120,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -140,7 +138,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -156,7 +156,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -172,7 +174,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -188,7 +192,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -204,23 +210,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
-        }
-    },
-    {
-        "question": "Quality education is a right of all people.",
-        "effect": {
-            "econ": 10,
-            "nati": 0,
-            "govt": 0,
-            "scty": 5,
-            "mltr": 0,
-            "trde": 0,
-            "tech": 0,
-            "demc": 0,
-            "imig": 0,
-            "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -236,7 +228,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -252,7 +246,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -268,7 +264,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -284,7 +282,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -300,7 +300,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -316,7 +318,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -332,7 +336,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -348,7 +354,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -364,7 +372,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -380,7 +390,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -396,7 +408,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
 
@@ -405,7 +419,7 @@ questions = [
         "effect": {
             "econ": 0,
             "nati": 0,
-            "govt": -5,
+            "govt": -2,
             "scty": 0,
             "mltr": 0,
             "trde": 0,
@@ -413,7 +427,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 10,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -421,7 +437,7 @@ questions = [
         "effect": {
             "econ": 0,
             "nati": 0,
-            "govt": -3,
+            "govt": -2,
             "scty": -5,
             "mltr": 0,
             "trde": 0,
@@ -429,7 +445,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": -10
+            "reli": -10,
+            "fede": 0,
+            "norm": 0
 
         }
     },
@@ -438,7 +456,7 @@ questions = [
         "effect": {
             "econ": 0,
             "nati": -5,
-            "govt": -10,
+            "govt": -5,
             "scty": -5,
             "mltr": 0,
             "trde": 0,
@@ -446,7 +464,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -462,7 +482,9 @@ questions = [
             "demc": 10,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -478,7 +500,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -494,7 +518,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -510,7 +536,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -526,7 +554,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -542,7 +572,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -558,23 +590,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
-        }
-    },
-    {
-        "question": "A hierarchical state is best.",
-        "effect": {
-            "econ": 0,
-            "nati": 0,
-            "govt": -5,
-            "scty": 5,
-            "mltr": 0,
-            "trde": 0,
-            "tech": 0,
-            "demc": 0,
-            "imig": 0,
-            "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -590,7 +608,9 @@ questions = [
             "demc": 10,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -606,7 +626,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -622,7 +644,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -638,7 +662,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -654,7 +680,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -670,7 +698,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": -10
+            "reli": -10,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -686,7 +716,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -702,7 +734,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -718,7 +752,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -734,7 +770,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
 
@@ -751,7 +789,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -767,7 +807,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -783,7 +825,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -799,7 +843,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -815,7 +861,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -831,7 +879,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -847,7 +897,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -863,7 +915,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -879,7 +933,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -895,7 +951,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -911,7 +969,9 @@ questions = [
             "demc": 0,
             "imig": 10,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -927,7 +987,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
 
@@ -944,7 +1006,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -960,7 +1024,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -976,7 +1042,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -992,7 +1060,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -1008,7 +1078,9 @@ questions = [
             "demc": -2,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -1024,7 +1096,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -1040,7 +1114,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -1056,7 +1132,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -1072,7 +1150,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -1088,7 +1168,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -1104,7 +1186,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -1120,7 +1204,9 @@ questions = [
             "demc": 0,
             "imig": -10,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -1136,7 +1222,9 @@ questions = [
             "demc": 0,
             "imig": -10,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -1152,7 +1240,9 @@ questions = [
             "demc": 0,
             "imig": 10,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -1168,7 +1258,9 @@ questions = [
             "demc": 0,
             "imig": 10,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -1184,7 +1276,9 @@ questions = [
             "demc": 10,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -1200,7 +1294,9 @@ questions = [
             "demc": 10,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -1216,7 +1312,9 @@ questions = [
             "demc": 5,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -1232,7 +1330,9 @@ questions = [
             "demc": -5,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -1248,7 +1348,9 @@ questions = [
             "demc": -10,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -1264,7 +1366,9 @@ questions = [
             "demc": -10,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -1280,7 +1384,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": -10,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -1296,7 +1402,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 10,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -1312,7 +1420,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 10,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -1328,7 +1438,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": -5,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -1344,7 +1456,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": -5,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -1360,7 +1474,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 10,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -1376,7 +1492,9 @@ questions = [
             "demc": -3,
             "imig": 0,
             "radi": -10,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     }, 
     {
@@ -1392,7 +1510,9 @@ questions = [
             "demc": 3,
             "imig": 0,
             "radi": 10,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -1408,7 +1528,9 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
     },
     {
@@ -1424,8 +1546,190 @@ questions = [
             "demc": 0,
             "imig": 0,
             "radi": 0,
-            "reli": 0
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
         }
-    }
+    },
+    {
+        "question": "Subdivisions of nations should have their own militaries.",
+        "effect": {
+            "econ": 0,
+            "nati": 0,
+            "govt": 0,
+            "scty": 0,
+            "mltr": -3,
+            "trde": 0,
+            "tech": 0,
+            "demc": 0,
+            "imig": 0,
+            "radi": 0,
+            "reli": 0,
+            "fede": 10,
+            "norm": 0
+        }
+    },
+    {
+        "question": "Laws should vary from area to area and culture to culture within a country.",
+        "effect": {
+            "econ": 0,
+            "nati": 0,
+            "govt": 0,
+            "scty": 0,
+            "mltr": 0,
+            "trde": 0,
+            "tech": 0,
+            "demc": 0,
+            "imig": 0,
+            "radi": 0,
+            "reli": 0,
+            "fede": 10,
+            "norm": 0
+        }
+    },
+    {
+        "question": "State laws should have precedence over national laws.",
+        "effect": {
+            "econ": 0,
+            "nati": 0,
+            "govt": 0,
+            "scty": 0,
+            "mltr": 0,
+            "trde": 0,
+            "tech": 0,
+            "demc": 0,
+            "imig": 0,
+            "radi": 0,
+            "reli": 0,
+            "fede": 10,
+            "norm": 0
+        }
+    },
+    {
+        "question": "There are many issues that it does not make sense to address at a local level.",
+        "effect": {
+            "econ": 0,
+            "nati": 0,
+            "govt": 0,
+            "scty": 0,
+            "mltr": 0,
+            "trde": 0,
+            "tech": 0,
+            "demc": 0,
+            "imig": 0,
+            "radi": 0,
+            "reli": 0,
+            "fede": -10,
+            "norm": 0
+        }
+    },
+    {
+        "question":  "People should think of themselves as citizens of their nation rather than their state.",
+        "effect": {
+            "econ": 0,
+            "nati": 0,
+            "govt": 0,
+            "scty": 0,
+            "mltr": 0,
+            "trde": 0,
+            "tech": 0,
+            "demc": 0,
+            "imig": 0,
+            "radi": 0,
+            "reli": 0,
+            "fede": -10,
+            "norm": 0
+        }
+    },
+    {
+        "question": "There is no need for local or state governments.",
+        "effect": {
+            "econ": 0,
+            "nati": 0,
+            "govt": 0,
+            "scty": 0,
+            "mltr": 0,
+            "trde": 0,
+            "tech": 0,
+            "demc": 0,
+            "imig": 0,
+            "radi": 0,
+            "reli": 0,
+            "fede": -10,
+            "norm": 0
+        }
+    },
+    {
+        "question": "We need military",
+        "effect": {
+            "econ": 0,
+            "nati": 0,
+            "govt": 0,
+            "scty": 0,
+            "mltr": -10,
+            "trde": 0,
+            "tech": 0,
+            "demc": 0,
+            "imig": 0,
+            "radi": 0,
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
+        }
+    },
+    {
+        "question": "We should work on building a global government.",
+        "effect": {
+            "econ": 0,
+            "nati": 10,
+            "govt": 0,
+            "scty": 0,
+            "mltr": 0,
+            "trde": 0,
+            "tech": 0,
+            "demc": 0,
+            "imig": 0,
+            "radi": 0,
+            "reli": 0,
+            "fede": 0,
+            "norm": 0
+        }
+    },
+    {
+        "question": "Religion should be forbidden",
+        "effect": {
+            "econ": 0,
+            "nati": 0,
+            "govt": -10,
+            "scty": 0,
+            "mltr": 0,
+            "trde": 0,
+            "tech": 0,
+            "demc": 0,
+            "imig": 0,
+            "radi": 0,
+            "reli": 10,
+            "fede": 0,
+            "norm": 0
+        }
+    },
+    {
+        "question": "I believe in a higher power.",
+        "effect": {
+            "econ": 0,
+            "nati": 0,
+            "govt": 0,
+            "scty": 0,
+            "mltr": 0,
+            "trde": 0,
+            "tech": 0,
+            "demc": 0,
+            "imig": 0,
+            "radi": 0,
+            "reli": -10,
+            "fede": 0,
+            "norm": 0
+        }
+    },
 
 ];
